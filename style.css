@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    font-family: SoDoSans_Light, Helvetica, sans-serif !important;
+}
+
+/* Header Starts Here  */
+
+/* .head{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 140px;
+    position: fixed;
+    width: 100%;
+} */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 140px;
+    position: fixed; /* Makes the header stay in place when scrolling */
+    width: 100%;     /* Ensures it spans the full width */
+    top: 0;          /* Positions the header at the top of the viewport */
+    background-color: white; /* Optional: Set background color to avoid transparency */
+    z-index: 1000;   /* Keeps it above other content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
+
+.left,.left>ul{
+    display: flex;
+}
+li{
+    list-style-type: none; 
+}
+.left a{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    color: rgb(51, 49, 49);
+}
+.home{
+    border-bottom: 2px solid #006241;
+    padding-bottom: 10px;
+}
+.home a {
+    font-weight: bold;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.left ul{
+    gap: 60px;
+}
+.nav-link{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.navs:hover{
+    color: rgb(101, 196, 101);
+    transition: 0.3s ease;
+}
+
+.right{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+.search-bar input{
+    outline: none;
+    border: none;
+}
+.search-bar input::placeholder{
+    font-size: 11px;
+}
+.acc-profile{
+    margin-right: 250px;
+}
+.acc-profile img{
+    height: 31px;
+    width: 31px;
+}
+
+/* Head Ends Here   */
+
+
+.know-more {
+    margin-top: 84px;
+    background-color: #1e3932;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    height: 80px;             
+}
+.know-more button{
+    background-color: #1e3932;
+    padding: 8px;
+    border: white solid 1px;
+    border-radius: 25px;
+    color: white;
+    margin-right: 140px;
+}
+
+
+/* Know More Ends here  */
+
+.ads-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ads{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 8px;
+    height: 210px;
+    width: 100%;
+    max-width: 1280px;
+    background-image: url("./assets/ads banner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.ads img{
+    height: 209px;
+    width: 100px;
+}
+.ads-details{
+    margin-left: 40px;
+    color: white;
+}
+.ads-description{
+    /* margin-top: -80px; */
+    margin-bottom: 30px;
+}
+.ads-description h3{
+    margin: 18px 0;
+}
+
+.ads-price-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ads-button button{
+    width: 200px;
+    height: 32px;
+    padding: 0;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+.ads-button{
+    position: absolute;
+    left: 1000px;
+}
+
+.ads-price p{
+    font-size: 12px;
+}
+.ads-price h3{
+    font-size: 15px;
+    margin-top: 2px;
+}
+.ads-price h3 span{
+    font-size: 11px;
+}
+
+
+
+/* ADS Ends Here */
+
+
+.curations{
+    margin: 30px 0 0 0;
+}
+.curations h2{
+    margin: 0 0 0 150px;
+    font-family: SoDoSans_Bold, Helvetica, sans-serif !important;
+    color: #1e3932;
+    font-weight: bolder;
+}
+.cur-image{
+    height: 108px;
+    width: 108px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #edebe9;
+    cursor: pointer;
+}
+.cur-image:hover{
+    border: 2px #006241 solid;
+    height: 106px;
+    width: 106px;
+}
+.round-cards{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin: 15px;
+}
+
+.curs{
+    text-align: center;
+}
+
+
+/* Handcrafted Curations Ends Here  */
+
+
+.barista{
+    margin-top: 100px;
+    background-color: #edebe9;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.barista-head{
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    display: flex;
+}
+.bar-head-first{
+    width: 1320px;
+    height: 60px;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    justify-content: space-between;
+    display: flex;
+}
+.bar-head-first a{
+    color: #00754a;
+    font-size: .8rem;
+    cursor: pointer;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+.leaf-svg{
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+
+.barista-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.barista-icon img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    float: left;
+}
+
+.card-barista{
+    width: 350px;
+    height: 125px;
+    padding: 1em 1.5em;
+    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+    border-radius: 8px;
+    background: #fff;
+}
+.barista-details{
+    width: 279px;
+    height: 92px;
+    margin-left: 95px;
+}
+.barista-details h3{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+
+}
+.barista-details h5{
+    color: #00000061;
+    font-size: 8px;
+    font-family: Pike_Regular, Helvetica, sans-serif !important;
+    margin-top: 5px;
+    letter-spacing: -0.6px;
+}
+
+.barista-price{
+    display: flex;
+    justify-content: space-between;
+}
+.barista-price button{
+    background-color: #00754a;
+    width: 96px;
+    height: 32px;
+    box-shadow: 0 4px 15px #a3a3a3ad;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.barista-price>button:hover{
+    background-color: #003203;
+}
+.barista-price p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+p span{
+    font-size: 12px !important;
+    /* font-weight: 500 !important; */
+}
+
+
+
+/* Barista Ends Here   */
+
+
+
+
+.discover{
+    width: 100%;
+    height: 430px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #edebe9;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.discover-container{
+    width: 1320px;
+    height: 432px;
+    margin: auto;
+  
+}
+.discover-head{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discover-head h2{
+    color: #000000;
+    font-weight: 800;  
+}
+.discover-head h6{
+    color: #00754a;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.poster>img{
+    width: 100%;
+    max-width: 1280px;
+    height: 372px;
+    border-radius: 8px;
+    margin: auto;
+    object-fit: cover;
+}
+.poster{
+    position: relative;
+    max-width: 1280px;
+    max-height: 372px;
+    border-radius: 10px;
+}
+.poster::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    max-height: 372px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
+    z-index: 1;
+    
+  }
+  .poster:hover::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)); /* Darker gradient on hover */
+  }
+.poster-details{
+    left: 40px;
+    top: 200px;
+    position: absolute;
+    z-index: 100;
+}
+.poster-details h5{
+    font-size: 28px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    color: #fff;
+    margin-bottom: .5em !important;
+}
+.poster-details p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 3em;
+    color: #fff;
+}
+.poster-details button{
+    width: 200px;
+    height: 32px;
+    padding: 0;
+    border-radius: 16px;
+    border: none;
+}
+
+
+/* Discover Poster Ends here   */
+
+.foot{
+    background-color: #0e382c;
+}
+
+.foot-up{
+    padding-top: 100px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.foot-logo img{
+    width: 62px;
+    height: 62px;
+    
+}
+.foot-logo{
+    position: relative;
+    left: -70px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-us>p,.socials>p{
+    font-size: 1.125em;
+    color: #fff;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.about-us a{
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: .875em;
+    text-decoration: none;
+    color: #dddddd;
+    transition: .3s;
+}
+.about-us>a:hover{
+    color: #575757;
+}
+
+.downloads{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Upper footer ends here   */
+
+
+.foot-hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.copyright{
+
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 1270px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgb(192, 188, 188);
+    padding-bottom: 40px;
+}
+
+.copy-left a,.copy-left p{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 12px;
+    transition: 0.2s;
+}
+.copy-left{
+    display: flex;
+    gap: 10px;
+}
+.copy-right a{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 10px;
+    transition: 0.2s;
+}
+.copy-left>a:hover{
+    color: #575757;
+}
+.copy-right>a:hover{
+    color: #575757;
+}
+
+
+/* footer copyright ends here   */
